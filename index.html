@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO</title>
     <link rel="stylesheet" href="./css/main.css">
-
+<!--
     <style>
+
         .simba {
         color: red;
         text-transform: uppercase;
@@ -16,7 +17,18 @@
         .darzove {
         font-style: italic;
         font-size: 20px;
-        }        
+        } 
+
+.pavadinimas {
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 40px;
+}
+.pomidoras {
+  color: red;
+  font-size: 20px;
+}
+
     </style>
 </head>
 <body>
@@ -29,7 +41,18 @@
       <li>Vanduo</li>
       <li>Druska</li>
     </ul>
-    
+-->   
+</head>
+<body>
+<header>
+    <form>
+        <button onclick="resetClick()" class="reset" type="button">Reset</button>
+        <button onclick="minusClick()" class="minus" type="button">-</button>
+        <div class="number">0</div>
+        <button onclick="plusClick()" class="plus" type="button">+</button>
+      </form>
+  
     <script src="./js/main.js" type="module" defer></script>
+</header>
 </body>
 </html>
