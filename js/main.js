@@ -1,21 +1,18 @@
-const resetQuery = document.querySelector('reset');
-const minusQuery = document.querySelector('minus');
-const plusQuery = document.querySelector('plus');
+const minusQuery = document.querySelector('.minus');
+const plusQuery = document.querySelector('.plus');
+const resetQuery = document.querySelector('.reset');
+const numberQuery = document.querySelector('.number');
 
-function resetClick() {
-    document.getElementsByClassName('number').value = 0;
-}
 function minusClick() {
-    document.getElementsByClassName('number').value--;
+    numberQuery.innerText--;
 }
 function plusClick() {
-    document.getElementsByClassName('number').value++;
+    numberQuery.innerText++;
+}
+function resetClick() {
+    numberQuery.innerText = 0;
 }
 
-resetQuery.addEventListener('click', resetClick);
 minusQuery.addEventListener('click', minusClick);
 plusQuery.addEventListener('click', plusClick);
-/*
-Uncaught ReferenceError: plusClick is not defined
-    at HTMLButtonElement.onclick
-*/
+resetQuery.addEventListener('click', resetClick);
